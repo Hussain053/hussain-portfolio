@@ -1,0 +1,206 @@
+/* ================================================================
+   responsive.css — Breakpoints & Mobile Styles
+   Hussain Patanwala Portfolio
+================================================================ */
+
+/* ── Tablet (≤ 960px) ─────────────────────────────────────────── */
+@media (max-width: 960px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .stats-row {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .test-scores-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ── Small Tablet / Large Phone (≤ 720px) ─────────────────────── */
+@media (max-width: 720px) {
+  /* Mobile Nav */
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 260px;
+    background: var(--bg2);
+    border-left: 1px solid var(--border);
+    padding: 80px 32px 32px;
+    z-index: 800;
+    gap: 24px;
+    box-shadow: -8px 0 40px rgba(0, 0, 0, 0.3);
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  /* Cursor — disable on touch devices */
+  #cursor {
+    display: none;
+  }
+
+  body {
+    cursor: auto;
+  }
+
+  /* Sections */
+  section {
+    padding: 70px 5%;
+  }
+
+  .hero-name {
+    font-size: clamp(2.4rem, 10vw, 3.8rem);
+  }
+
+  .section-title {
+    font-size: clamp(1.8rem, 7vw, 2.5rem);
+    margin-bottom: 40px;
+  }
+
+  /* Projects & Skills */
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Timeline */
+  .timeline {
+    padding-left: 28px;
+  }
+
+  .timeline-card {
+    padding: 20px 22px;
+  }
+
+  /* Footer */
+  footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  /* Test Scores */
+  .test-scores-list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .test-score-item {
+    padding: 14px 10px;
+  }
+
+  .test-score-name {
+    font-size: 0.7rem;
+  }
+
+  .test-score-value {
+    font-size: 1.1rem;
+  }
+}
+
+/* ── Phone (≤ 480px) ──────────────────────────────────────────── */
+@media (max-width: 480px) {
+  .stats-row {
+    grid-template-columns: 1fr;
+  }
+
+  .test-scores-list {
+    grid-template-columns: 1fr;
+  }
+
+  .achievements-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-cta {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .btn {
+    padding: 12px 24px;
+    font-size: 0.75rem;
+  }
+
+  .filter-bar {
+    gap: 8px;
+  }
+
+  .filter-btn {
+    padding: 6px 14px;
+    font-size: 0.68rem;
+  }
+
+  .timeline-card {
+    padding: 18px 20px;
+  }
+
+  .project-body {
+    padding: 20px;
+  }
+
+  .skill-group {
+    padding: 24px 20px;
+  }
+
+  /* Test Scores */
+  .test-scores-list {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .test-score-item {
+    padding: 16px 12px;
+  }
+
+  .test-score-name {
+    font-size: 0.73rem;
+  }
+
+  .test-score-value {
+    font-size: 1.25rem;
+  }
+}
+
+/* ── Light mode — Nav background fix ─────────────────────────── */
+@media (max-width: 720px) {
+  [data-theme="light"] .nav-links {
+    background: #f0f4ff;
+    border-left-color: rgba(59, 82, 200, 0.15);
+    box-shadow: -8px 0 40px rgba(59, 82, 200, 0.1);
+  }
+}
+
+/* ── Reduced Motion ───────────────────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  html {
+    scroll-behavior: auto;
+  }
+}

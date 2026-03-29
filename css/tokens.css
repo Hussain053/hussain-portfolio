@@ -1,0 +1,65 @@
+/* ================================================================
+   tokens.css — Design Variables & Theme Definitions
+   Hussain Patanwala Portfolio
+================================================================ */
+
+/* ── Dark Theme (Default) ─────────────────────────────────────── */
+:root {
+  /* Backgrounds */
+  --bg:       #050811;
+  --bg2:      #080e1e;
+  --bg3:      #0c1428;
+  --surface:  rgba(255, 255, 255, 0.04);
+  --card:     rgba(12, 20, 40, 0.75);
+  --border:   rgba(255, 255, 255, 0.08);
+
+  /* Accent Colors */
+  --cyan:     #00e5ff;
+  --blue:     #3b82f6;
+  --purple:   #a855f7;
+  --pink:     #ec4899;
+
+  /* Text */
+  --text:     #e2e8f0;
+  --muted:    #64748b;
+  --heading:  #f8fafc;
+
+  /* Glow */
+  --glow-c:   rgba(0, 229, 255, 0.18);
+  --glow-p:   rgba(168, 85, 247, 0.18);
+
+  /* UI */
+  --radius:   16px;
+  --radius-sm: 10px;
+
+  /* Typography */
+  --font-display: 'Syne', sans-serif;
+  --font-mono:    'Space Mono', monospace;
+  --font-body:    'DM Sans', sans-serif;
+
+  /* Nav */
+  --nav-bg:   rgba(5, 8, 17, 0.6);
+}
+
+/* ── Light Theme ──────────────────────────────────────────────── */
+[data-theme="light"] {
+  /* Backgrounds */
+  --bg:      #f0f4ff;
+  --bg2:     #e6ecff;
+  --bg3:     #dce4ff;
+  --surface: rgba(59, 82, 200, 0.06);
+  --card:    rgba(255, 255, 255, 0.95);
+  --border:  rgba(59, 82, 200, 0.15);
+
+  /* Text */
+  --text:    #1e293b;
+  --muted:   #5a6a85;
+  --heading: #0f172a;
+
+  /* Glow (softer in light mode) */
+  --glow-c:  rgba(59, 130, 246, 0.1);
+  --glow-p:  rgba(168, 85, 247, 0.1);
+
+  /* Nav */
+  --nav-bg:  rgba(240, 244, 255, 0.85);
+}

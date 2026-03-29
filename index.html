@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hussain Patanwala - Software Developer</title>
+  <meta name="description" content="Portfolio of Hussain Patanwala — Software Developer, Python Enthusiast, Creative Technologist based in Pune, India." />
+  <meta name="keywords" content="Hussain Patanwala, Software Developer, Python, Web Development, PVGCOET, Pune" />
+  <meta name="author" content="Hussain Patanwala" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Hussain Patanwala — Software Developer" />
+  <meta property="og:description" content="Building Modern Web Experiences & Python-Based Solutions" />
+  <meta property="og:type" content="website" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=Space+Mono:wght@400;700&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/tokens.css" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/nav.css" />
+  <link rel="stylesheet" href="css/sections.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════
+       CUSTOM CURSOR
+  ════════════════════════════════════════ -->
+  <div id="cursor" aria-hidden="true">
+    <div class="dot"></div>
+    <div class="ring"></div>
+  </div>
+
+  <!-- ═══════════════════════════════════════
+       PAGE LOADER
+  ════════════════════════════════════════ -->
+  <div id="loader" role="status" aria-label="Loading portfolio">
+    <div class="loader-text">Initializing...</div>
+    <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+  </div>
+
+  <!-- ═══════════════════════════════════════
+       NAVIGATION
+  ════════════════════════════════════════ -->
+  <nav id="nav" role="navigation" aria-label="Main navigation">
+    <a href="#hero" class="logo" aria-label="Hussain Patanwala Home">HP.</a>
+
+    <ul class="nav-links" id="navLinks" role="menubar">
+      <li role="none"><a href="#about"        role="menuitem" onclick="closeMenu()">About</a></li>
+      <li role="none"><a href="#experience"   role="menuitem" onclick="closeMenu()">Experience</a></li>
+      <li role="none"><a href="#achievements" role="menuitem" onclick="closeMenu()">Wins</a></li>
+      <li role="none"><a href="#projects"     role="menuitem" onclick="closeMenu()">Projects</a></li>
+      <li role="none"><a href="#skills"       role="menuitem" onclick="closeMenu()">Skills</a></li>
+      <li role="none"><a href="#contact"      role="menuitem" onclick="closeMenu()">Contact</a></li>
+    </ul>
+
+    <div class="nav-right">
+      <button class="theme-toggle" id="themeToggle" title="Toggle light/dark mode" aria-label="Toggle theme"></button>
+      <div class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Toggle menu" role="button" tabindex="0">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════════
+       HERO SECTION
+  ════════════════════════════════════════ -->
+  <section id="hero">
+    <canvas class="hero-canvas" id="heroCanvas" aria-hidden="true"></canvas>
+
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Available for Internships and Collaborations
+      </div>
+
+      <h1 class="hero-name">
+        Hi, I'm <span>Hussain<br>Patanwala</span>
+      </h1>
+
+      <p class="hero-tagline">
+        <strong>Building Modern Web Experiences & Python-Based Solutions</strong><br>
+        Passionate engineering student &middot; Team leader &middot; Continuous learner
+      </p>
+
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">⚡ View Projects</a>
+        <a href="#contact"  class="btn btn-secondary">✉ Contact Me</a>
+       
+      </div>
+    </div>
+
+    <div class="hero-scroll" aria-hidden="true">
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       ABOUT SECTION
+  ════════════════════════════════════════ -->
+  <section id="about">
+    <div class="section-label reveal">Who I Am</div>
+    <h2 class="section-title reveal">About <span>Me</span></h2>
+
+    <div class="about-grid">
+      <!-- Left: Bio + Stats -->
+      <div class="about-text reveal">
+        <div class="internship-badge">
+          <span></span> OPEN TO OPPORTUNITIES
+        </div>
+
+        <p>I'm a <strong>second-year IT engineering student</strong> at PVGCOET, Pune (SPPU)
+           with an <strong>SGPA of 8.5+</strong> and a deep passion for building real-world digital products.</p>
+
+        <p>My core focus is <strong>Python development and problem-solving</strong>, currently
+           leveling up with Data Structures &amp; Algorithms. I love building systems that are
+           both technically sound and visually compelling.</p>
+
+        <p>Beyond code, I've led teams in hackathons and ideathons — managing strategy to
+           execution, proving that <strong>great software needs great teamwork</strong>.</p>
+
+        <div class="stats-row">
+          <div class="stat-card">
+            <div class="stat-num">8.5+</div>
+            <div class="stat-label">SGPA</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num">6+</div>
+            <div class="stat-label">Projects</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num">4+</div>
+            <div class="stat-label">Competitions</div>
+          </div>
+        </div>
+
+        <h4 style="margin-top: 2rem; margin-bottom: 1rem;">📊 Test Scores</h4>
+        <div class="test-scores-list">
+          <div class="test-score-item">
+            <div class="test-score-name">MHTCET 2024</div>
+            <div class="test-score-value">97.60%ile</div>
+          </div>
+          <div class="test-score-item">
+            <div class="test-score-name">JEE MAIN 2024</div>
+            <div class="test-score-value">80%ile</div>
+          </div>
+          <div class="test-score-item">
+            <div class="test-score-name">10th Board (CBSE)</div>
+            <div class="test-score-value">87.80%</div>
+          </div>
+          <div class="test-score-item">
+            <div class="test-score-name">12th Board (HSC)</div>
+            <div class="test-score-value">80.24%</div>
+          </div>
+          <div class="test-score-item">
+            <div class="test-score-name">COMEDK</div>
+            <div class="test-score-value">80%ile</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Subjects + Currently Learning -->
+      <div class="reveal">
+        <ul class="subjects-list" aria-label="Subjects studied">
+          <li>Data Structures &amp; Algorithms</li>
+          <li>Object-Oriented Programming (OOP)</li>
+          <li>Basics of Computer Networks</li>
+          <li>Project Management</li>
+          
+        </ul>
+
+        <div class="learning-box">
+          <h4>🚀 Currently Learning</h4>
+          <span class="learning-tag">DSA in Python</span>
+          <span class="learning-tag">Advanced Python</span>
+          <span class="learning-tag">React Ecosystem</span>
+          <span class="learning-tag">System Design</span>
+          <span class="learning-tag">REST APIs</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       EXPERIENCE SECTION
+  ════════════════════════════════════════ -->
+  <section id="experience">
+    <div class="section-label reveal">Track Record</div>
+    <h2 class="section-title reveal">Roles &amp; <span>Experience</span></h2>
+
+    <div class="timeline">
+
+      <div class="timeline-item reveal">
+        <div class="timeline-card">
+          <div class="timeline-role">Web Development Intern</div>
+          <div class="timeline-org">Deevelo X &mdash; Mar–Apr 2025</div>
+          <div class="timeline-desc">Built a production-ready Anime Tracker web app with full responsive design, dark/light mode, smooth animations, and polished UI/UX.</div>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-card">
+          <div class="timeline-role">Technical Team Member</div>
+          <div class="timeline-org">TEDx PVGCOET</div>
+          <div class="timeline-desc">Contributed to the technical operations of TEDx PVGCOET, supporting event logistics, digital infrastructure, and the frontend development of the official website.</div>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-card">
+          <div class="timeline-role">Technical Team Member</div>
+          <div class="timeline-org">ITSA &mdash; PVG COET</div>
+          <div class="timeline-desc">Contributed to technical event planning and execution for the Information Technology Students' Association. Coordinated workshops, competitions, and tech fests.</div>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-card">
+          <div class="timeline-role">Sponsorship Team Member</div>
+          <div class="timeline-org">EDC &mdash; PVG COET</div>
+          <div class="timeline-desc">Handled industry outreach, sponsor negotiations, and partnership management for entrepreneurship events. Sharpened communication and deal-making skills.</div>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-card">
+          <div class="timeline-role">Finance Team Member</div>
+          <div class="timeline-org">ACM &mdash; PVG COET</div>
+          <div class="timeline-desc">Managed budgeting, expense tracking, and financial reporting for ACM chapter events. Developed strong organizational and analytical skills.</div>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-card">
+          <div class="timeline-role">Associate Member &mdash; Data Management</div>
+          <div class="timeline-org">Training &amp; Placement Cell &mdash; PVG COET</div>
+          <div class="timeline-desc">Maintained and organized student data records, coordinated placement drives, and supported the cell's administrative and technical operations.</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       ACHIEVEMENTS SECTION
+  ════════════════════════════════════════ -->
+  <section id="achievements">
+    <div class="section-label reveal">Milestones</div>
+    <h2 class="section-title reveal"><span>Achievements</span> &amp; Wins</h2>
+
+    <div class="achievements-grid">
+
+      <div class="ach-card reveal">
+        <div class="ach-icon">🏆</div>
+        <div class="ach-title">ProtoTech Ideathon &mdash; MMCOE</div>
+        <p class="ach-desc">Led the team as Team Leader to the final rounds, presenting a working prototype to an industry panel.</p>
+        <span class="ach-badge">Final Round &middot; Team Leader</span>
+      </div>
+
+      <div class="ach-card reveal">
+        <div class="ach-icon">💡</div>
+        <div class="ach-title">Ideathon &mdash; PICT Pune</div>
+        <p class="ach-desc">Ideated and pitched an innovative solution to a real-world problem, advancing to the final rounds as team captain.</p>
+        <span class="ach-badge">Final Round &middot; Team Leader</span>
+      </div>
+
+      <div class="ach-card reveal">
+        <div class="ach-icon">📊</div>
+        <div class="ach-title">Case Study Competition &mdash; PICT</div>
+        <p class="ach-desc">Analyzed complex business-tech scenarios, presented structured solutions, and reached the finals as team leader.</p>
+        <span class="ach-badge">Final Round &middot; Team Leader</span>
+      </div>
+
+      <div class="ach-card reveal">
+        <div class="ach-icon">⚡</div>
+        <div class="ach-title">24-Hour Hackathon &mdash; VIT Pune</div>
+        <p class="ach-desc">Powered through a full-day hack building a functional product under extreme time pressure. Leadership under fire.</p>
+        <span class="ach-badge">Final Round &middot; Team Leader</span>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       PROJECTS SECTION
+  ════════════════════════════════════════ -->
+  <section id="projects">
+    <div class="section-label reveal">What I've Built</div>
+    <h2 class="section-title reveal">Featured <span>Projects</span></h2>
+
+    <!-- Filter Bar -->
+    <div class="filter-bar reveal" role="group" aria-label="Filter projects">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="web">Web Apps</button>
+      <button class="filter-btn" data-filter="react">React</button>
+      <button class="filter-btn" data-filter="system">Systems</button>
+    </div>
+
+    <div class="projects-grid">
+
+      <article class="project-card reveal" data-cat="web">
+        <div class="project-img" aria-hidden="true">🎌</div>
+        <div class="project-body">
+          <div class="project-tags">
+            <span class="project-tag">HTML</span>
+            <span class="project-tag">CSS</span>
+            <span class="project-tag">JavaScript</span>
+          </div>
+          <h3 class="project-title">Anime Tracker Website</h3>
+          <p class="project-desc">Responsive frontend app with dark/light mode, smooth animations, and a sleek modern UI. Built during internship at Deevelo X.</p>
+          <div class="project-links">
+            <a href="https://hussain053.github.io/Anime-Tracker-Website-/" target="_blank" rel="noopener" class="project-link">🌐 Live Demo</a>
+            <a href="https://github.com/hussain053/Anime-Tracker-Website-" target="_blank" rel="noopener" class="project-link">⬡ GitHub</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card reveal" data-cat="system">
+        <div class="project-img" aria-hidden="true">📦</div>
+        <div class="project-body">
+          <div class="project-tags">
+            <span class="project-tag">JavaScript</span>
+            <span class="project-tag">System Design</span>
+            <span class="project-tag">Analytics</span>
+          </div>
+          <h3 class="project-title">SmartBiz — Inventory &amp; Billing</h3>
+          <p class="project-desc">Full-featured inventory tracker with billing, invoice generation, and dashboard analytics. Designed for small business owners.</p>
+          <div class="project-links">
+            <a href="https://hussain053.github.io/Inventory_Billing_Software/" target="_blank" rel="noopener" class="project-link">🌐 Live Demo</a>
+            <a href="https://github.com/Hussain053/Inventory_Billing_Software" target="_blank" rel="noopener" class="project-link">⬡ GitHub</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card reveal" data-cat="system">
+        <div class="project-img" aria-hidden="true">🌊</div>
+        <div class="project-body">
+          <div class="project-tags">
+            <span class="project-tag">Community</span>
+            <span class="project-tag">Monitoring</span>
+            <span class="project-tag">Sustainability</span>
+          </div>
+          <h3 class="project-title">Urban Water Supply System</h3>
+          <p class="project-desc">Community-based reporting system for drainage issues with real-time monitoring and analytics. Sustainable city solutions.</p>
+          <div class="project-links">
+            <a href="https://hussain053.github.io/CEP_Group_Project/" target="_blank" rel="noopener" class="project-link">🌐 Live Demo</a>
+            <a href="https://github.com/Hussain053/CEP_Group_Project" target="_blank" rel="noopener" class="project-link">⬡ GitHub</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card reveal" data-cat="react">
+        <div class="project-img" aria-hidden="true">🎤</div>
+        <div class="project-body">
+          <div class="project-tags">
+            <span class="project-tag">React</span>
+            <span class="project-tag">Frontend</span>
+            <span class="project-tag">Production</span>
+          </div>
+          <h3 class="project-title">TEDx PVGCOET Website</h3>
+          <p class="project-desc">Frontend UI for TEDx PVGCOET built with React. A professional production site for one of India's most iconic idea conferences.</p>
+          <div class="project-links">
+            <a href="https://www.tedxpvgcoet.in/" target="_blank" rel="noopener" class="project-link">🌐 Live Site</a>
+            <a href="https://github.com/tedxpvgcoet-tech/tedxpvgcoetFrontend" target="_blank" rel="noopener" class="project-link">⬡ GitHub</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card reveal" data-cat="system">
+        <div class="project-img" aria-hidden="true">🔐</div>
+        <div class="project-body">
+          <div class="project-tags">
+            <span class="project-tag">SIH 2025</span>
+            <span class="project-tag">Auth System</span>
+            <span class="project-tag">Prototype</span>
+          </div>
+          <h3 class="project-title">SIH 2025 Prototype</h3>
+          <p class="project-desc">Functional prototype with login system built for Smart India Hackathon 2025. Demo credentials: admin / 1234.</p>
+          <div class="project-links">
+            <a href="https://internkingss.github.io/Internsking/" target="_blank" rel="noopener" class="project-link">🌐 Live Demo</a>
+            <a href="https://github.com/Internkingss/Internsking" target="_blank" rel="noopener" class="project-link">⬡ GitHub</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card reveal" data-cat="web">
+        <div class="project-img" aria-hidden="true">✨</div>
+        <div class="project-body">
+          <div class="project-tags">
+            <span class="project-tag">HTML</span>
+            <span class="project-tag">CSS</span>
+            <span class="project-tag">Branding</span>
+          </div>
+          <h3 class="project-title">Portfolio Website</h3>
+          <p class="project-desc">Personal portfolio with a futuristic neon-cyber theme. A showcase of UI craftsmanship, personal branding, and developer identity.</p>
+          <div class="project-links">
+            <a href="#" class="project-link">🌐 You're Here</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       SKILLS SECTION
+  ════════════════════════════════════════ -->
+  <section id="skills">
+    <div class="section-label reveal">Toolbox</div>
+    <h2 class="section-title reveal">Skills &amp; <span>Tech</span></h2>
+
+    <div class="skills-grid">
+
+      <!-- Frontend -->
+      <div class="skill-group reveal">
+        <div class="skill-group-title">Frontend</div>
+        <div class="skill-item">
+          <div class="skill-top"><span class="skill-name">HTML &amp; CSS</span><span class="skill-pct">90%</span></div>
+          <div class="skill-track"><div class="skill-bar" data-w="90"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-top"><span class="skill-name">JavaScript</span><span class="skill-pct">78%</span></div>
+          <div class="skill-track"><div class="skill-bar" data-w="78"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-top"><span class="skill-name">React</span><span class="skill-pct">65%</span></div>
+          <div class="skill-track"><div class="skill-bar" data-w="65"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-top"><span class="skill-name">Responsive Design</span><span class="skill-pct">88%</span></div>
+          <div class="skill-track"><div class="skill-bar" data-w="88"></div></div>
+        </div>
+      </div>
+
+      <!-- Programming -->
+      <div class="skill-group reveal">
+        <div class="skill-group-title">Programming</div>
+        <div class="skill-item">
+          <div class="skill-top"><span class="skill-name">Python</span><span class="skill-pct">80%</span></div>
+          <div class="skill-track"><div class="skill-bar" data-w="80"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-top"><span class="skill-name">DSA (In Progress)</span><span class="skill-pct">60%</span></div>
+          <div class="skill-track"><div class="skill-bar" data-w="60"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-top"><span class="skill-name">OOP Concepts</span><span class="skill-pct">82%</span></div>
+          <div class="skill-track"><div class="skill-bar" data-w="82"></div></div>
+        </div>
+      </div>
+
+      <!-- Design & Tools -->
+      <div class="skill-group reveal">
+        <div class="skill-group-title">Design &amp; Tools</div>
+        <div class="skill-item">
+          <div class="skill-top"><span class="skill-name">Figma</span><span class="skill-pct">65%</span></div>
+          <div class="skill-track"><div class="skill-bar" data-w="65"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-top"><span class="skill-name">Canva &amp; Corel Draw</span><span class="skill-pct">85%</span></div>
+          <div class="skill-track"><div class="skill-bar" data-w="85"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-top"><span class="skill-name">Video Editing</span><span class="skill-pct">75%</span></div>
+          <div class="skill-track"><div class="skill-bar" data-w="75"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-top"><span class="skill-name">Git &amp; GitHub</span><span class="skill-pct">75%</span></div>
+          <div class="skill-track"><div class="skill-bar" data-w="75"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-top"><span class="skill-name">SEO &amp; Digital Marketing</span><span class="skill-pct">78%</span></div>
+          <div class="skill-track"><div class="skill-bar" data-w="78"></div></div>
+        </div>
+      </div>
+
+      <!-- Languages -->
+      <div class="skill-group reveal">
+        <div class="skill-group-title">Languages Known</div>
+        <div class="lang-pills">
+          <span class="lang-pill"> English</span>
+          <span class="lang-pill"> Hindi</span>
+          <span class="lang-pill"> Gujarati</span>
+          <span class="lang-pill"> Marathi</span>
+          <span class="lang-pill"> Arabic (Reading)</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       CONTACT SECTION
+  ════════════════════════════════════════ -->
+  <section id="contact">
+    <div class="section-label reveal">Let's Talk</div>
+    <h2 class="section-title reveal">Get In <span>Touch</span></h2>
+
+    <div class="contact-grid">
+
+      <!-- Left: Info -->
+      <div class="contact-info reveal">
+        <h3>Open to Opportunities</h3>
+        <p>Whether it's an internship, collaboration, hackathon invitation, or just a great conversation about tech — my inbox is always open.</p>
+        <ul class="contact-links">
+          <li><a href="mailto:hussainpatanwala6@gmail.com"><span class="icon">✉</span> hussainpatanwala6@gmail.com</a></li>
+          <li><a href="tel:+917822089785"><span class="icon">📞</span> +91 7822089785</a></li>
+          <li><a href="https://github.com/hussain053" target="_blank" rel="noopener"><span class="icon">⬡</span> github.com/hussain053</a></li>
+          <li><a href="https://www.linkedin.com/in/hussain-patanwala-9881b6328/" target="_blank" rel="noopener"><span class="icon">🔗</span> LinkedIn Profile</a></li>
+        </ul>
+      </div>
+
+      <!-- Right: Form -->
+      <div class="reveal">
+        <div class="contact-form" id="contactForm">
+          <div class="form-group">
+            <label for="fname">Your Name</label>
+            <input type="text" id="fname" placeholder="John Doe" autocomplete="name" />
+          </div>
+          <div class="form-group">
+            <label for="femail">Email Address</label>
+            <input type="email" id="femail" placeholder="you@example.com" autocomplete="email" />
+          </div>
+          <div class="form-group">
+            <label for="fmsg">Message</label>
+            <textarea id="fmsg" rows="5" placeholder="Tell me about your project, opportunity, or idea..."></textarea>
+          </div>
+          <div class="form-msg" id="formMsg" role="alert" aria-live="polite"></div>
+          <button type="button" class="btn btn-primary" onclick="handleForm()">
+  Send Message →
+</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       FOOTER
+  ════════════════════════════════════════ -->
+  <footer>
+    <span>© 2026 <span class="footer-brand">Hussain Patanwala
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+
+</body>
+</html>

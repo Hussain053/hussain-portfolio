@@ -1,0 +1,17 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor directories
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Node (if used for local dev server)
+node_modules/
+npm-debug.log*
+
+# Build outputs (not applicable but good practice)
+dist/
+build/
