@@ -9,7 +9,7 @@ https://hussain053.github.io/hussain-portfolio/
 
 ## 📌 About
 
-I am a second-year Information Technology engineering student with an interest in frontend development and Python.
+I am a second-year Information Technology engineering student with an interest in software development and Python.
 
 This portfolio showcases my:
 
